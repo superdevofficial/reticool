@@ -72,6 +72,9 @@
 
       /** Use CSS Vars to power your RETICOOL, if supported */
       useCSSVars: true,
+
+      /** Change parent container of your reticool */
+      parent: document.body
     };
 
     this.config = Object.assign({}, defaultConfig, opts);
@@ -199,7 +202,7 @@
 
     attach(){
       this.events();
-      document.body.appendChild(this.$);
+      this.config.parent.appendChild(this.$);
     },
 
     destroy(){
