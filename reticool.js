@@ -73,7 +73,7 @@
       /** Use CSS Vars to power your RETICOOL, if supported */
       useCSSVars: true,
 
-      /** Change parent container of your reticool */
+      /** Change parent container of your reticool  */
       parent: document.body
     };
 
